@@ -7,6 +7,7 @@ import { CONTACT_INFO, SOCIAL_LINKS } from '../../utils/data';
 import { containerVariants, itemVariants } from '../../utils/helper';
 import TextInput from '../Input/TextInput';
 import SuccessModel from '../SuccessModel';
+import emailjs from '@emailjs/browser';
 
 const ContactSection = () => {
     const { isDarkMode } = useTheme();
@@ -40,18 +41,28 @@ const ContactSection = () => {
         e.preventDefault();
         setIsSubmitting(true);
 
-        // Simulate API Call
-        await new Promise((resolve) => setTimeout(resolve, 1000));
+        try {
+            await emailjs.send(
+                'service_25up8as',
+                'g2ej405',
+                {
+                    from_name: formData.name,
+                    from_email: formData.email,
+                    message: formData.message,
+                },
+                'pjieun_8yGt-dD2rW'
+            );
 
-        setIsSubmitting(false);
-        setShowSuccess(true);
-        setFormData({name: "name", email: "email", message: "message"});
+            setIsSubmitting(false);
+            setShowSuccess(true);
+            setFormData({ name: '', email: '', message: '' });
+            setTimeout(() => setShowSuccess(false), 3000);
 
-        //Auto hide Success model after 3 seconds
-        
-        setTimeout(() => setShowSuccess(false), 3000);
-
-
+        } catch (error) {
+            console.error('Email error:', error);
+            setIsSubmitting(false);
+            alert('Something went wrong. Please try again!');
+        }
     };
 
 
@@ -311,7 +322,10 @@ const ContactSection = () => {
                         Sometimes a Conversation is worth than a thousand messages. Feel free to Schedule a
                         call to discuss about the work.
                     </p>
-                    <motion.button
+                    <motion.a
+                        href="https://calendly.com/pamarthisravani/quick-discussion"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         whileHover={{ y: -2, scale: 1.05 }}
                         whileTap={{ scale: 0.98 }}
                         className={`px-6 py-3 rounded-full border font-medium transition-all duration-300 ${
@@ -321,7 +335,7 @@ const ContactSection = () => {
                         }`}
                     >
                         Schedule a Call
-                    </motion.button>
+                    </motion.a>
                 </motion.div>
             </motion.div>
 
