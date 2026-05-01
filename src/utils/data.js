@@ -22,6 +22,7 @@ import moodboard_img from "../assets/images/moodboard.png";
 import riteup_img from "../assets/images/riteup.png";
 import sentiment_img from "../assets/images/sentiment.png";
 import livelybrews_img from "../assets/images/livelybrews.png";
+import resumate_img from "../assets/images/resumate.png";
 
 export const SKILLS_CATEGORY = [
     {
@@ -134,6 +135,17 @@ export const PROJECTS = [
     },
     {
         id: 4,
+        title: "ResuMate",
+        description: "An AI-powered resume analyzer built with React, Node.js and Groq AI. Upload your resume and get instant scores, keyword analysis, strengths, improvements and personalized suggestions.",
+        image: resumate_img,
+        tags: ["React", "Node.js", "Groq AI", "Express", "MongoDB"],
+        liveUrl: "https://resumate-coral.vercel.app/",
+        githubUrl: "https://github.com/sravanipamarthi/resumate",
+        featured: true,
+        category: "AI",
+    },
+    {
+        id: 5,
         title: "Lively Brews",
         description: "A high-performance animated cafe landing page built to explore advanced UI/UX patterns with state-driven animations and a clean modern aesthetic.",
         image: livelybrews_img,
