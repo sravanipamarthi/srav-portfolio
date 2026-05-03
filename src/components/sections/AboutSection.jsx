@@ -96,7 +96,7 @@ const AboutSection = () => {
                     </motion.h2>
                 </motion.div>
 
-                <div className="grid lg:grid-cols-2 gap-16 item-start">
+                <div className="grid lg:grid-cols-2 gap-16 items-start">
                     {/* Personal Story */}
                     <motion.div
                         initial="hidden"
@@ -117,25 +117,20 @@ const AboutSection = () => {
                                     isDarkMode ? "text-gray-300" : "text-gray-700"
                                 }`}
                             >
-                                I recently finished my Master’s in Computer Science at SUNY New Paltz, and honestly, 
-                                I just love figuring out how complex systems actually work under the hood. For me, 
-                                the best part of engineering is the challenge of taking a logical problem and turning 
-                                it into something functional that people can actually use. I've been spending most of 
-                                my time working with the MERN stack and Python, always trying to keep my code clean 
-                                and secure. I’m still learning every day, but I’m really driven by the idea of building 
-                                software that isn't just a quick fix, but something that’s built to last.
+                                I recently completed my Master's in Computer Science at SUNY New Paltz, with a
+                                 focus on building systems that are as elegant under the hood as they are functional 
+                                 on the surface. I work primarily with the MERN stack and Python, with a strong emphasis on 
+                                 writing clean, secure, and maintainable code.
                             </p>
                             <p 
                                 className={`text-base leading-relaxed ${
                                     isDarkMode ? "text-gray-400" : "text-gray-600"
                                 }`}
                             >
-                                My mission is pretty simple, I want to take the concepts I studied during my Master’s 
-                                and use them to build software that actually makes sense for the people using it. 
-                                I really enjoy the process of taking a messy, complicated problem and figuring out 
-                                how to turn it into a clean, working system. I’m always trying to learn better ways 
-                                to code and keep up with new tools, but at the end of the day, I just want to build 
-                                web apps that are solid, fast, and actually solve the problem they were meant to.
+                                My goal is to bridge the gap between complex engineering challenges and real-world usability — 
+                                turning messy problems into systems that are fast, reliable, and built to scale. I continuously 
+                                expand my skills and stay current with emerging tools, always with an eye toward shipping software 
+                                that genuinely makes a difference.
                             </p>
                         </motion.div>
                         

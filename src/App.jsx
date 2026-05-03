@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ThemeProvider } from './context/ThemeContext';
 import Navbar from './components/Navbar';
 import HeroSection from "./components/sections/HeroSection";
@@ -7,12 +7,15 @@ import ProjectsSection from './components/sections/ProjectsSection';
 import AboutSection from './components/sections/AboutSection';
 import ContactSection from './components/sections/ContactSection';
 import Footer from './components/sections/Footer';
+import SplashScreen from './components/SplashScreen';
 
 const App = () => {
+  const [splashDone, setSplashDone] = useState(false);
 
   return (
     <ThemeProvider>
-      <div>
+      {!splashDone && <SplashScreen onComplete={() => setSplashDone(true)} />}
+      <div style={{ visibility: splashDone ? 'visible' : 'hidden' }}>
         <Navbar />
         <HeroSection />
         <SkillsSection />

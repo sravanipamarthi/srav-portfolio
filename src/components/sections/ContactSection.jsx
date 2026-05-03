@@ -108,7 +108,7 @@ const ContactSection = () => {
                     className="text-3xl md:text-5xl font-light mb-6"
                 >
                     Get In
-                    <span className="text-[#7B3F00] font-mediun"> Touch</span>
+                    <span className="text-[#7B3F00] font-medium"> Touch</span>
                 </motion.h2>
 
                 <motion.p
@@ -276,7 +276,7 @@ const ContactSection = () => {
                         variants={itemVariants}
                         className={`p-6 rounded-xl border ${
                             isDarkMode ?
-                            "bg-green-500/10 boder-green-500/20" : "bg-green-50 border-green-200"
+                            "bg-green-500/10 border-green-500/20" : "bg-green-50 border-green-200"
                         }`}
                     >
                         <div className="flex items-center space-x-3 mb-2">
@@ -291,7 +291,7 @@ const ContactSection = () => {
                                 isDarkMode ? "text-gray-400" : "text-gray-600"
                             }`}
                         >
-                            I'm currently available for Full-Time Oppurtunities.
+                            I'm currently available for Full-Time Opportunities.
                         </p>
                     </motion.div>
                 </motion.div>
@@ -319,7 +319,7 @@ const ContactSection = () => {
                             isDarkMode ? "text-gray-400" : "text-gray-600"
                         } mb-6`}
                     >
-                        Sometimes a Conversation is worth than a thousand messages. Feel free to Schedule a
+                        Sometimes a Conversation is worth more than a thousand messages. Feel free to Schedule a
                         call to discuss about the work.
                     </p>
                     <motion.a
