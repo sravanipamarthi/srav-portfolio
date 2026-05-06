@@ -72,6 +72,8 @@ const ProjectCard = ({project, index, isDarkMode}) => {
                 >
                     <motion.a
                         href={project.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         initial={{ y: 20, opacity: 0.5}}
                         whileHover={{ y: 0, opacity: 1, scale:1.05 }}
                         transition={{ duration: 0.3, delay: 0.1 }}
@@ -83,6 +85,8 @@ const ProjectCard = ({project, index, isDarkMode}) => {
 
                     <motion.a
                         href={project.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         initial={{ y: 20, opacity: 0.5}}
                         whileHover={{ y: 0, opacity: 1, scale:1.05 }}
                         transition={{ duration: 0.3, delay: 0.2 }}

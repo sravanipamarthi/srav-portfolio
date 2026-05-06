@@ -208,9 +208,9 @@ export const JOURNEY_STEPS = [
     },
     {
         year: "2025",
-        title: "Master's Degree & Job Search",
+        title: "Master's Degree",
         company: "SUNY New Paltz",
-        description: "Graduated with a Master's degree in Computer Science and actively seeking full stack developer opportunities to make a real impact.",
+        description: "Graduated with a Master's degree in Computer Science.",
         icon: GraduationCap,
         color: "bg-[#6B5E4F]",
     },

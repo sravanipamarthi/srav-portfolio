@@ -44,7 +44,7 @@ const ContactSection = () => {
         try {
             await emailjs.send(
                 'service_25up8as',
-                'g2ej405',
+                'template_oyinq2f',
                 {
                     from_name: formData.name,
                     from_email: formData.email,

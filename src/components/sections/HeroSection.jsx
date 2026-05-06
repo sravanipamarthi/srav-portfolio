@@ -339,13 +339,15 @@ const HeroSection = () => {
                                 className="flex space-x-6 mb-12"
                             >
                                 {[
-                                    {icon: FiGithub, href:"#"},
-                                    {icon: FiLinkedin, href:"#"},
-                                    {icon: Mail, href:"#"},
+                                    {icon: FiGithub, href:"https://github.com/sravanipamarthi", target:"_blank"},
+                                    {icon: FiLinkedin, href:"https://www.linkedin.com/in/sravani-pamarthi/", target:"_blank", rel:"noopener noreferrer"},
+                                    {icon: Mail, href:"mailto:pamarthisravani18@gmail.com", target:"_blank", rel:"noopener noreferrer"},
                                 ].map((social, index) => (
                                     <motion.a
                                         key={index}
                                         href={social.href}
+                                        target={social.target}
+                                        rel={social.rel}
                                         whileHover={{y: -3, scale: 1.1}}
                                         className={`p-3 rounded-full transition-colors ${
                                             isDarkMode ? "text-gray-400 hover:text-white hover:bg-gray-800"

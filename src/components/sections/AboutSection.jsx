@@ -286,6 +286,7 @@ const AboutSection = () => {
                         <motion.button
                             whileHover={{ y: -2, scale: 1.05 }}
                             whileTap={{ scale: 0.98 }}
+                            onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
                             className="bg-[#7B3F00] hover:bg-[#5C2F00] text-white px-8 py-3 rounded-full text-sm uppercase tracking-wider font-medium transition-all duration-300"
                         >
                             Let's Work Together

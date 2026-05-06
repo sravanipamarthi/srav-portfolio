@@ -18,13 +18,13 @@ const Footer = () => {
         {
             name: 'Github',
             icon: FiGithub,
-            url: "#",
+            url: "https://github.com/sravanipamarthi",
             color: "hover:text-gray-400"
         },
         {
             name: 'LinkedIn',
             icon: FiLinkedin,
-            url: "#",
+            url: "https://www.linkedin.com/in/sravani-pamarthi/",
             color: "hover:text-blue-400"
         },
         {
