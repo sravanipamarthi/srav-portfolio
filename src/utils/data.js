@@ -23,7 +23,7 @@ import riteup_img from "../assets/images/riteup.png";
 import sentiment_img from "../assets/images/sentiment.png";
 import livelybrews_img from "../assets/images/livelybrews.png";
 import resumate_img from "../assets/images/resumate.png";
-import brewreads_img from "../assets/images/brewreads.png"
+import brewreads_img from "../assets/images/brewreads.png";
 
 export const SKILLS_CATEGORY = [
     {
