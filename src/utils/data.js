@@ -23,6 +23,7 @@ import riteup_img from "../assets/images/riteup.png";
 import sentiment_img from "../assets/images/sentiment.png";
 import livelybrews_img from "../assets/images/livelybrews.png";
 import resumate_img from "../assets/images/resumate.png";
+import brewreads_img from "../assets/images/brewreads.png"
 
 export const SKILLS_CATEGORY = [
     {
@@ -101,7 +102,18 @@ export const STATS = [
 
 export const PROJECTS = [
     {
-        id: 1,
+    id: 1,
+    title: "BrewReads",
+    description: "A mood-based reading app that uses AI to recommend the perfect book or article based on how you're feeling. Features 9 mood themes, Spotify playlists, nearby café finder, and a personal reading shelf.",
+    image: brewreads.png,
+    tags: ["React", "Vite", "Node.js", "Express", "MongoDB", "Groq AI", "OpenStreetMap", "Spotify"],
+    liveUrl: "https://brewreads.vercel.app",
+    githubUrl: "https://github.com/sravanipamarthi/brewreads",
+    featured: true,
+    category: "Full Stack",
+    },
+    {
+        id: 2,
         title: "MoodBoard",
         description: "A full stack team wellness & productivity tracker for modern hybrid teams. Features daily mood check-ins, manager dashboard with analytics, JWT authentication, real-time updates and dark/light mode.",
         image: moodboard_img,
@@ -112,7 +124,7 @@ export const PROJECTS = [
         category: "Full Stack",
     },
     {
-        id: 2,
+        id: 3,
         title: "Rite-up",
         description: "A full stack social media platform where users can create posts, follow others, and engage with content in real time.",
         image: riteup_img,
@@ -123,7 +135,7 @@ export const PROJECTS = [
         category: "Full Stack",
     },
     {
-        id: 3,
+        id: 4,
         title: "Twitter Sentiment Analysis",
         description: "An ML project that analyzes tweet sentiment in real time. Deployed an interactive web application using Streamlit and Hugging Face Spaces for live inference.",
         image: sentiment_img,
@@ -134,7 +146,7 @@ export const PROJECTS = [
         category: "ML",
     },
     {
-        id: 4,
+        id: 5,
         title: "ResuMate",
         description: "An AI-powered resume analyzer built with React, Node.js and Groq AI. Upload your resume and get instant scores, keyword analysis, strengths, improvements and personalized suggestions.",
         image: resumate_img,
@@ -145,7 +157,7 @@ export const PROJECTS = [
         category: "AI",
     },
     {
-        id: 5,
+        id: 6,
         title: "Lively Brews",
         description: "A high-performance animated cafe landing page built to explore advanced UI/UX patterns with state-driven animations and a clean modern aesthetic.",
         image: livelybrews_img,
