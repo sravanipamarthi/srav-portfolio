@@ -105,7 +105,7 @@ export const PROJECTS = [
     id: 1,
     title: "BrewReads",
     description: "A mood-based reading app that uses AI to recommend the perfect book or article based on how you're feeling. Features 9 mood themes, Spotify playlists, nearby café finder, and a personal reading shelf.",
-    image: brewreads.png,
+    image: brewreads_img,
     tags: ["React", "Vite", "Node.js", "Express", "MongoDB", "Groq AI", "OpenStreetMap", "Spotify"],
     liveUrl: "https://brewreads.vercel.app",
     githubUrl: "https://github.com/sravanipamarthi/brewreads",
